@@ -76,6 +76,6 @@ public class BrowserHistory {
 		if(index < 0) {
 			throw new InvalidPositionException("Provide only positive values");
 		}
-		return urlHistory.get(index);
+		return urlHistory.get(index - 1);
 	}
 }
